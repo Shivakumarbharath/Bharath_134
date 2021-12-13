@@ -66,7 +66,7 @@ proc finish { } {
 global ns nf tf
 $ns flush-trace
 exec nam p5.nam &
-exec awk -f p5.awk p5.tr &
+exec awk -f exp_5.awk p5.tr &
 close $tf
 exit 0
 }
